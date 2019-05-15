@@ -26,6 +26,14 @@ REUSEABLE COMPONENTS
     margin: 0 auto;
 }
 
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
 /* --------------------------------------------------------
 HEADINGS 
 -------------------------------------------------------- */
@@ -46,6 +54,11 @@ h2 {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.5px; 
+}
+
+h3 {
+    font-size: 110%;
+    font-weight: 300;
 }
 
 p {
@@ -129,4 +142,35 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid white;
+}
+
+.service-header {
+    color: black;
+    font-size: 180%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-header:after {
+    display: block;
+    height: 2px;
+    background-color: darkgray;
+    content: " ";
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 10px;
+
+}
+
+.Long-copy {
+    color: darkgray;
+    line-height: 145%;
+    font-size: 90%;
+}
+
+.icon-big {
+    font-size: 500%;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
 }
