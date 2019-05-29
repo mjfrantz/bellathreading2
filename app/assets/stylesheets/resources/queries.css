@@ -1,0 +1,44 @@
+/* Big tablets to Computer screens  from 1023 to 1200 px*/
+@media only screen and (max-width: 1200px) {
+    .woman-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+    .row { padding: 0 2%;}
+}
+
+
+/* Small tablet to Big tablet  from 768 to 1023 px*/
+@media only screen and (max-width: 1023px) {
+    body { font-size: 18px; }
+    section { padding: 60px 0; }
+
+    .Long-copy {
+        width: 80%;
+        line-height: 145%;
+        margin-left: 10%;
+    }
+
+}
+
+/* Small Phones  to small tablets 481 to 767 px*/
+@media only screen and (max-width: 767px) {
+    body { font-size: 16px; }
+    section { padding: 30px 0; }
+
+    .row,
+    .woman-text-box { padding: 0 4%; }
+
+    .col { width: 100%; }
+
+    main-nav { display: none; }
+
+}
+
+/* Small Phones  from 0 to 400 px*/
+@media only screen and (max-width: 480px) {
+
+}
+
+
+
