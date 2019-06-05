@@ -22,6 +22,10 @@ $('document').ready(function () {
 		return false;
 	});
 
+	// // /* Animation on Scroll */
+	// $('.js--wp1').waypoint(function (direction) {
+	// 	$(.js--wp1).addClass('animated fadeIn');
+	// })
 
 });
 

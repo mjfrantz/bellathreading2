@@ -403,3 +403,13 @@ footer p {
 }
 
 /* html {    scroll-behavior: smooth;    } */
+
+/* Animations */
+
+.js--wp1 {
+    opacity: 0;
+}
+
+.js--wp1.animated {
+    opacity: 1;
+}
