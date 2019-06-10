@@ -28,4 +28,5 @@ $('document').ready(function () {
 			offset: '80%'
 
 		});
+
 });
