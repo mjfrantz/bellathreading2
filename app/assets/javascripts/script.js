@@ -14,18 +14,18 @@ $('document').ready(function () {
 			offset: '60px;'
 		})
 
-	/* Pop out for book an appointment */
 	$('a').click(function () {
 		$('html, body').animate({
 			scrollTop: $($.attr(this, 'href')).offset().top
-		}, 1000);
+		}, 1500);
 		return false;
 	});
 
-	// // /* Animation on Scroll */
-	// $('.js--wp1').waypoint(function (direction) {
-	// 	$(.js--wp1).addClass('animated fadeIn');
-	// })
+	// /* Animation on Scroll */
+	$('.js--wp1').waypoint(function (direction) {
+		$('.js--wp1').addClass('animated fadeIn');
+	}, {
+			offset: '80%'
 
+		});
 });
-
