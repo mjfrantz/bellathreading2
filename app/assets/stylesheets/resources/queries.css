@@ -28,16 +28,22 @@
 
     .row,
     .woman-text-box { padding: 0 4%; }
-
     .col { width: 100%; }
+    .main-nav { display: none; }
 
-    main-nav { display: none; }
+    h1 { font-size: 100%; }
+    h2 { font-size: 150%; }
+
+    .Long-copy {
+        margin: 100%;
+        margin-left: 0%;
+    }
 
 }
 
 /* Small Phones  from 0 to 400 px*/
 @media only screen and (max-width: 480px) {
-
+    section { padding 25px 0; }
 }
 
 
