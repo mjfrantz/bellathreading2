@@ -161,7 +161,7 @@ header {
     border-bottom: 2px solid darkgray;
 }
 
-/* Mobile Nav
+/* Mobile Nav */
 .mobile-nav-icon {
     float: right;
     margin-top: 30px;
@@ -172,7 +172,7 @@ header {
 .mobile-nav-icon i {
     font-size: 200%;
     color:#fff;
-} */
+} 
 
 /* STICKY NAV  */
 

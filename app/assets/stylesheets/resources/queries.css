@@ -1,5 +1,5 @@
 /* Big tablets to Computer screens  from 1023 to 1200 px*/
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px){
     .woman-text-box {
         width: 100%;
         padding: 0 2%;
@@ -9,41 +9,69 @@
 
 
 /* Small tablet to Big tablet  from 768 to 1023 px*/
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1023px){
     body { font-size: 18px; }
     section { padding: 60px 0; }
 
     .Long-copy {
-        width: 80%;
+        width: 100%;
         line-height: 145%;
         margin-left: 10%;
     }
+    .woman-text-box { 
+        padding: 0 2%;
+        width: 100% !important; }
 
 }
 
 /* Small Phones  to small tablets 481 to 767 px*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px){
     body { font-size: 16px; }
     section { padding: 30px 0; }
 
     .row,
-    .woman-text-box { padding: 0 4%; }
-    .col { width: 100%; }
+    .woman-text-box { padding: 0 4%; 
+        width: 100% !important; }
+    .col { width: 100% !important; }
     .main-nav { display: none; }
+    .mobile-nav-icon { display: inline-block; }
+    .main-nav { 
+        float: left; 
+        margin-top: 35px;
+        margin-left: 25px;
+    }
+    .main-nav li {
+        display: block;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+
+    .sticky .main-nav { margin-top: 10px; }
+
+    .sticky .main-nav li a:link, 
+    .sticky .main-nav li a:visited { padding: 10px 0;}
+    .stick .mobile-nav-icon i { margin-top: 10px; }
+    .stick .mobile-nav-icon i { color: #000000; }
 
     h1 { font-size: 100%; }
     h2 { font-size: 150%; }
 
     .Long-copy {
-        margin: 100%;
+        margin: 5%;
         margin-left: 0%;
     }
 
 }
 
 /* Small Phones  from 0 to 400 px*/
-@media only screen and (max-width: 480px) {
-    section { padding 25px 0; }
+@media only screen and (max-width: 480px){
+    section{ padding 25px 0; }
 }
 
 
