@@ -33,16 +33,15 @@
     .woman-text-box { padding: 0 4%; 
         width: 100% !important; }
     .col { width: 100% !important; }
-    .main-nav { display: none; }
-    .mobile-nav-icon { display: inline-block; }
+    /* .main-nav { display: none; } */
+    .mobile-nav-icon i { display: inline-block; }
     .main-nav { 
         float: left; 
-        margin-top: 35px;
-        margin-left: 25px;
+        /* margin-top: 35px;
+        margin-left: 25px; */
     }
-    .main-nav li {
-        display: block;
-    }
+
+    .main-nav li { display: block;}
 
     .main-nav li a:link,
     .main-nav li a:visited {
@@ -56,8 +55,8 @@
 
     .sticky .main-nav li a:link, 
     .sticky .main-nav li a:visited { padding: 10px 0;}
-    .stick .mobile-nav-icon i { margin-top: 10px; }
-    .stick .mobile-nav-icon i { color: #000000; }
+    /* .stick .mobile-nav-icon i { margin-top: 10px; }
+    .stick .mobile-nav-icon i { color: pink; } */
 
     h1 { font-size: 100%; }
     h2 { font-size: 150%; }
