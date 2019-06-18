@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  scheduled_at: 2019-06-18 17:12:56
-  state: MyString
+  scheduled_at: 2019-06-18 17:50:42
+  client: one
+  beautician: one
 
 two:
-  scheduled_at: 2019-06-18 17:12:56
-  state: MyString
+  scheduled_at: 2019-06-18 17:50:42
+  client: two
+  beautician: two
