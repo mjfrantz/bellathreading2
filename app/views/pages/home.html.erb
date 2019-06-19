@@ -9,6 +9,9 @@
 				<li><a href="#gallery">Gallery</a></li>
 				<li><%= link_to "Sign up", user_session_path(@user) %></li>
 				<li><%= link_to "Log in", user_session_path(@user) %></li>
+				<% if user_signed_in? %>
+	   				<%= link_to "Log out", destroy_user_session_path, method: :delete, class: "bellathreading-navbar" %>
+	   			<% end %>
 			</ul>
 			<a class="mobile-nav-icon js--nav--icon"><i class="fas fa-bars"></i></a>
 		</div>

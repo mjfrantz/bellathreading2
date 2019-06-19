@@ -35,8 +35,4 @@ $('document').ready(function () {
 
 	// 	nav.slideToggle(200);
 	// });
-
 });
-
-
-
