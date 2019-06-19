@@ -426,3 +426,13 @@ footer p {
 .js--wp1.animated {
     opacity: 1;
 }
+
+/* Login / Sign up */
+.signup{
+    color: black;
+}
+
+.signin {
+    text-align: center;
+    margin-top: 100px;
+}

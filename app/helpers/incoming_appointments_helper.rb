@@ -1,0 +1,2 @@
+module IncomingAppointmentsHelper
+end
