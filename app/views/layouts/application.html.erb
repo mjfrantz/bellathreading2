@@ -12,8 +12,6 @@
     <title>Bellathreading</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link rel="apple-touch-icon" sizes="180x180" href="app/assets/stylesheets/resources/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="app/assets/stylesheets/resources/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="app/assets/stylesheets/resources/favicon/favicon-16x16.png">
@@ -29,11 +27,14 @@
     <%= yield %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
     <script src="app/assets/javascripts/vendors/jquery.waypoints.min.js"></script>
     <script src="app/assets/javascripts/script.js"></script>
+    <script src="/app/assets/javascripts/main.js"></script>
   </body>
 </html>
 

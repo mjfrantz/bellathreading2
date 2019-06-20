@@ -10,46 +10,59 @@
 				<li><%= link_to "Sign up", user_session_path(@user) %></li>
 				<li><%= link_to "Log in", user_session_path(@user) %></li>
 				<% if user_signed_in? %>
-	   				<%= link_to "Log out", destroy_user_session_path, method: :delete, class: "bellathreading-navbar" %>
-	   			<% end %>
+				<%= link_to "Log out", destroy_user_session_path, method: :delete, class: "bellathreading-navbar" %>
+				<% end %>
 			</ul>
 			<a class="mobile-nav-icon js--nav--icon"><i class="fas fa-bars"></i></a>
 		</div>
 	</nav>
 	<div class="woman-text-box">
 		<h1>Bella’s Threading.</h1>
-			<h2>Look Good, Feel Good!</h2>
-				<p>You will be warmly welcomed and ensured a calm and relaxing <br>environment every visit - at Bella's you'll receive the VIP treatment you so deserve!</p>
-					<a class="btn btn-full" href="#">BOOK AN APPOINTMENT</a>
+		<h2>Look Good, Feel Good!</h2>
+		<p>You will be warmly welcomed and ensured a calm and relaxing <br>environment every visit - at Bella's you'll
+			receive the VIP treatment you so deserve!</p>
+		<!-- <a class="btn btn-full" href="#">BOOK AN APPOINTMENT</a> -->
+		<button id="modalBtn" class="button">BOOK</button>
 	</div>
 </header>
-
+<div id="simpleModal" class="modal">
+	<div class="modal-content">
+		<span class="closeBtn">&times;</span>
+		<%=render "devise/sessions/new"%>
+	</div>
+</div>
 <section class="section-features js--section-features" id="features">
 	<div class="row">
 		<i class="fas fa-spa icon-big"></i>
 		<h2 class="service-header">Services</h2>
-			<p class="Long-copy">
-			The ancient art of threading has withstood the pressures of modern technology and urbanisation. Originating in central Asia, this technique was used to beautify brides and royalty, offering precision and control in achieving the most elegant set of eyebrows.</p>
+		<p class="Long-copy">
+			The ancient art of threading has withstood the pressures of modern technology and urbanisation. Originating
+			in central Asia, this technique was used to beautify brides and royalty, offering precision and control in
+			achieving the most elegant set of eyebrows.</p>
 	</div>
 	<div class="row js--wp1">
 		<div class="col span-1-of-4 box">
 			<h3>THREADING</h3>
-				<p class="Long-copy">At Bella's only the highest quality 100% cotton thread is used to remove short rows of hair strands right from their follicle.</p>
+			<p class="Long-copy">At Bella's only the highest quality 100% cotton thread is used to remove short rows of
+				hair strands right from their follicle.</p>
 		</div>
 		<div class="col span-1-of-4 box">
 			<h3>FACIAL</h3>
-				<p class="Long-copy">Our facials incorporate customized Chakra massage techniques and natural products designed to balance specific energy centres, your Chakras.</p>
+			<p class="Long-copy">Our facials incorporate customized Chakra massage techniques and natural products
+				designed to balance specific energy centres, your Chakras.</p>
 		</div>
 		<div class="col span-1-of-4 box">
 			<h3>FACE WAXING</h3>
-				<p class="Long-copy">Our facials incorporate customized Chakra massage techniques and natural products designed to balance specific energy centres, your Chakras.</p>
+			<p class="Long-copy">Our facials incorporate customized Chakra massage techniques and natural products
+				designed to balance specific energy centres, your Chakras.</p>
 		</div>
 		<div class="col span-1-of-4 box">
 			<h3>WAXING</h3>
-				<p class="Long-copy"> Our facials incorporate customized Chakra massage techniques and natural products designed to balance specific energy centres, your Chakras.</p>
+			<p class="Long-copy"> Our facials incorporate customized Chakra massage techniques and natural products
+				designed to balance specific energy centres, your Chakras.</p>
 		</div>
 	</div>
-	<div class="row", style="text-align:center;">
+	<div class="row" , style="text-align:center;">
 		<a class="btn btn-full-price" href="#">VIEW PRICE LIST</a>
 	</div>
 </section>
@@ -107,19 +120,22 @@
 	<div class="row">
 		<div class="col span-1-of-3">
 			<blockquote>
-				This is the best threading experience I have ever had! I have never been as happy as I was with Bella's. I cannot recommend her enough!
+				This is the best threading experience I have ever had! I have never been as happy as I was with Bella's.
+				I cannot recommend her enough!
 				<cite><%= image_tag "nick.jpg", alt:"nick-profile", class:"profile-img" %>Nichole F.</cite>
 			</blockquote>
 		</div>
 		<div class="col span-1-of-3">
 			<blockquote>
-				I came in with very uneven and messy brows and left with my brows being perfect. The woman who did the threading was very thorough with my brows and took the time to make sure everything looked right.			
+				I came in with very uneven and messy brows and left with my brows being perfect. The woman who did the
+				threading was very thorough with my brows and took the time to make sure everything looked right.
 				<cite><%= image_tag "jackie.jpg", alt:"jackie-profile", class:"profile-img" %>Jackie K.</cite>
 			</blockquote>
 		</div>
 		<div class="col span-1-of-3">
 			<blockquote>
-				I love going here! They are fast, friendly, and do an excellent job, great prices as well!!!! No other place in osan compares!			
+				I love going here! They are fast, friendly, and do an excellent job, great prices as well!!!! No other
+				place in osan compares!
 				<cite><%= image_tag "Leslie.jpg", alt:"leslie-profile", class:"profile-img" %>Leslie G.</cite>
 			</blockquote>
 		</div>
