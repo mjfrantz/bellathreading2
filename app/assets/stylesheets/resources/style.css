@@ -145,7 +145,7 @@ header {
 }
 
 .main-nav li a:link, 
-.main-nav li a:visited {
+.main-nav li a:visited{
     padding: 8px 0;
     color: #ffffff;
     text-decoration: none;
@@ -157,7 +157,7 @@ header {
 }
 
 .main-nav li a:hover,
-.main-nav li a:active {
+.main-nav li a:active{
     border-bottom: 2px solid darkgray;
 }
 
@@ -434,8 +434,7 @@ footer p {
 
 .signin {
     text-align: center;
-    margin-top: 150px;
-    border-radius: 3px;
+    /* border-radius: 3px; */
     box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
     width: 300px;
     height: 250px;
@@ -458,9 +457,10 @@ footer p {
 
 .modal-content{
     background-color:darkgrey;
-    margin: 40% auto;
+    border-radius: 50%;
+    margin: 10% auto;
     padding: 20px;
-    width: 70%;
+    width: 30%;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
     animation-name: modalopen;
     animation-duration: 2s;
@@ -482,3 +482,27 @@ footer p {
     from{opacity: 0}
     to{opacity: 1}
 }
+
+
+/* BUTTONS */
+.book-btn {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: 300;
+    font-size: 17px;
+    text-decoration: none;
+    background-color: #808080;
+    border-radius: 1200px;
+    color: white;
+    border: 2px solid;
+    padding: 10px 30px;
+    cursor: pointer;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.book-btn:hover,
+.book-btn:active {
+    color: darkgray;
+}
+

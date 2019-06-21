@@ -7,11 +7,11 @@
 				<li><a href="#home">Home</a></li>
 				<li><a href="#features">Services</a></li>
 				<li><a href="#gallery">Gallery</a></li>
-				<li><%= link_to "Sign up", user_session_path(@user) %></li>
-				<li><%= link_to "Log in", user_session_path(@user) %></li>
-				<% if user_signed_in? %>
-				<%= link_to "Log out", destroy_user_session_path, method: :delete, class: "bellathreading-navbar" %>
-				<% end %>
+				<li><a href="#simpleModal" data-toggle="modal" class="button" id="modalBtn"
+						data-target="#simpleModal">Log in</a>
+				</li>
+				<!-- <li><button id="modalBtn">Sign up</button></li>
+				<li><button id="modalBtn">Log</button></li> -->
 			</ul>
 			<a class="mobile-nav-icon js--nav--icon"><i class="fas fa-bars"></i></a>
 		</div>
@@ -22,7 +22,7 @@
 		<p>You will be warmly welcomed and ensured a calm and relaxing <br>environment every visit - at Bella's you'll
 			receive the VIP treatment you so deserve!</p>
 		<!-- <a class="btn btn-full" href="#">BOOK AN APPOINTMENT</a> -->
-		<button id="modalBtn" class="button">BOOK</button>
+		<!-- <button id="modalBtn" class="book-btn">BOOK AN APPOINTMENT</button> -->
 	</div>
 </header>
 <div id="simpleModal" class="modal">
