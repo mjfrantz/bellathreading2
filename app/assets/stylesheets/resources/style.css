@@ -430,15 +430,18 @@ footer p {
 /* Login / Sign up */
 .signup{
     color: black;
+    font-weight: bold;
+    letter-spacing: -0.5px;
 } 
 
 .signin {
     text-align: center;
+    margin-top: 20%;
     /* border-radius: 3px; */
-    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-    width: 300px;
-    height: 250px;
-    border: 1px solid black;
+    /* box-shadow: 1px 1px 2px rgba(0,0,0,0.1); */
+    /* width: 300px;
+    height: 250px; */
+    /* border: 1px solid black; */
 }
 
 /* Modal */
@@ -456,11 +459,12 @@ footer p {
 }
 
 .modal-content{
-    background-color:darkgrey;
-    border-radius: 50%;
+    background-color:white;
+    border-radius: 10%;
     margin: 10% auto;
     padding: 20px;
-    width: 30%;
+    width: 25%;
+    height: 50%;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
     animation-name: modalopen;
     animation-duration: 2s;
