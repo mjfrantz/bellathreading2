@@ -5,7 +5,8 @@
 			<%= image_tag "logo2.png", alt: "Bella's logo", class:"logo-sticky" %>
 			<ul class="main-nav js--main-nav">
 				<li><a href="#home">Home</a></li>
-				<li><a href="#features">Services</a></li>
+				<!-- <li><a href="#features">Services</a></li> -->
+				<li><%= link_to "Services", root_path, :remote => true, :class => "js--section-features", :id => "features" %></li>
 				<li><a href="#gallery">Gallery</a></li>
 				<li><a href="#simpleModal" data-toggle="modal" class="button" id="modalBtn"
 						data-target="#simpleModal">Log in</a>
@@ -22,7 +23,7 @@
 		<p>You will be warmly welcomed and ensured a calm and relaxing <br>environment every visit - at Bella's you'll
 			receive the VIP treatment you so deserve!</p>
 		<!-- <a class="btn btn-full" href="#">BOOK AN APPOINTMENT</a> -->
-		<!-- <button id="modalBtn" class="book-btn">BOOK AN APPOINTMENT</button> -->
+		<!-- <button id="bookingBtnModal" class="book-btn">BOOK AN APPOINTMENT</button> -->
 	</div>
 </header>
 <div id="simpleModal" class="modal">
@@ -31,6 +32,12 @@
 		<%=render "devise/sessions/new"%>
 	</div>
 </div>
+<!-- <div id="bookingModal" class="modal">
+	<div class="modal-content">
+		<span class="closeBtn">&times;</span>
+		<p>Random</p>
+	</div>
+</div> -->
 <section class="section-features js--section-features" id="features">
 	<div class="row">
 		<i class="fas fa-spa icon-big"></i>
